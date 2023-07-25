@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1777488/public_html/
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp export.php $DEPLOYPATH
+    - /bin/cp dbconfig.php $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R SQL $DEPLOYPATH
