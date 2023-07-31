@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    background: linear-gradient(135deg, #1a1a1a, #2f2f2f, #1a1a1a); /* Ganti warna gradient sesuai dengan preferensi Anda */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    perspective: 1000px; /* Menerapkan efek perspektif */
+    text-align: center; /* Agar button berada di tengah */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px goldenrod; /* Efek bayangan teks */
+}
+
+.btn-success {
+    margin-top: 1rem; /* Menambahkan jarak atas button dengan tabel */
+    margin-bottom: 1rem; /* Menambahkan jarak bawah button dengan tabel */
+    background-color: #33cc33;
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0.8em 1.5em;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efek transisi 3D saat di-hover */
+    /* Efek transisi 3D saat di-hover */
+    transform-style: preserve-3d;
+    transform: translateZ(-50px) rotateX(20deg);
+    /* Bayangan 3D */
+    box-shadow: 0 10px 20px rgba(51, 204, 51, 0.3);
+}
+
+.btn-success:hover {
+    background-color: #00b300;
+    /* Efek transisi 3D saat di-hover */
+    transform: translateZ(0) rotateX(0);
+    box-shadow: 0 15px 30px rgba(51, 204, 51, 0.5); /* Bayangan saat di-hover */
+}
+
+.table {
+    color: #333;
+    border-collapse: collapse; /* Menggabungkan garis-garis antar sel */
+    width: 100%;
+}
+
+.table thead th {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.table tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+.table td {
+    border-color: #ccc;
+    padding: 1rem;
+}
+
+.dwn {
+    /* Add your custom icon styles here (e.g., font-size, color, etc.) */
+    /* For example: */
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    /* Efek transisi 3D pada ikon */
+    transform: translateZ(-20px) rotateY(20deg);
+}
+
+.dwn:hover {
+    /* Efek transisi 3D saat di-hover */
+    transform: translateZ(0) rotateY(0);
+    box-shadow: 0 10px 20px rgba(51, 204, 51, 0.3); /* Bayangan saat di-hover */
+}

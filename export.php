@@ -10,7 +10,7 @@
     }
 
     // Excel file name for download
-    $filename = "members-data_" . date('Y-m-d') . ".xls";
+    $filename = "acmilan-members-data_" . date('Y-m-d') . ".xls";
 
     // Column names
     $fields = array('ID', 'FIRST NAME', 'LAST NAME', 'EMAIL', 'GENDER', 'COUNTRY', 'CREATED', 'STATUS');

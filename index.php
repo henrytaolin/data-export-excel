@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Export Data to Excel using PHP</title>
+    <title>Export Data</title>
 
     <!-- Bootstrap Library -->
     <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css"> -->
@@ -27,7 +27,10 @@
             <!-- Export Link -->
             <div class="col-md12 head">
                 <div class="float-right">
-                    <a href="export.php" class="btn btn-success"><i class="dwn"></i> Export</a>
+                    <a href="export.php" class="btn btn-success">
+                        <!-- <i class="dwn"></i> -->
+                        Export
+                    </a>
                 </div>
             </div>
 
@@ -35,8 +38,8 @@
             <table class="table table-striped table-bordered">
                 <thead class="thead-dark">
                     <tr>
-                        <th>#ID</th>
-                        <th>#Name</th>
+                        <th>ID</th>
+                        <th>Name</th>
                         <th>Email</th>
                         <th>Gender</th>
                         <th>Country</th>
